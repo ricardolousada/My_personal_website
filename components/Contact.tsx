@@ -1,3 +1,5 @@
+import { CopyNote } from "@/components/CopyNote";
+import { EmailLink } from "@/components/EmailLink";
 import { links, profile } from "@/lib/profile";
 
 export function Contact() {
@@ -6,9 +8,10 @@ export function Contact() {
       <div className="wrap contact">
         <p className="contact-kicker">06 — Contact</p>
         <h2>Tell me what needs an owner.</h2>
-        <a className="contact-email" href={links.email}>
+        <EmailLink className="contact-email" copiedLabel="Copied to clipboard">
           {profile.email}
-        </a>
+        </EmailLink>
+        <CopyNote />
         <div className="contact-links">
           <a href={links.linkedin} target="_blank" rel="noreferrer">
             LinkedIn
@@ -19,7 +22,6 @@ export function Contact() {
           <a href={links.github} target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href={links.pdf}>Profile PDF</a>
         </div>
         <footer className="footer">
           <span>© {new Date().getFullYear()} Ricardo Lousada. Lisbon.</span>

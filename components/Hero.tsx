@@ -1,5 +1,6 @@
+import { EmailLink } from "@/components/EmailLink";
 import { OpenTwinButton } from "@/components/OpenTwinButton";
-import { links, profile, ticker } from "@/lib/profile";
+import { profile, ticker } from "@/lib/profile";
 
 export function Hero() {
   const loop = [...ticker, ...ticker];
@@ -8,7 +9,6 @@ export function Hero() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="wrap">
         <div className="hero-top">
-          <p className="kicker">DXC Technology · Portugal</p>
           <p className="status">
             <i />
             {profile.availability}
@@ -21,9 +21,9 @@ export function Hero() {
         <div className="hero-bottom">
           <p className="lede">{profile.lede}</p>
           <div className="cta-row">
-            <a className="btn" href={links.email}>
+            <EmailLink className="btn" href="/#contact" copiedLabel="Email copied">
               Start a conversation
-            </a>
+            </EmailLink>
             <a className="btn btn-ghost" href="#journey">
               Career journey
             </a>

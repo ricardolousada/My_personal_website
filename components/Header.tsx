@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { links, nav } from "@/lib/profile";
+import { EmailLink } from "@/components/EmailLink";
+import { nav } from "@/lib/profile";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -45,9 +46,9 @@ export function Header() {
           Twin
         </button>
       </nav>
-      <a className="header-mail" href={links.email}>
+      <EmailLink className="header-mail" copiedLabel="Copied">
         Email
-      </a>
+      </EmailLink>
       <button
         className="nav-toggle"
         type="button"
