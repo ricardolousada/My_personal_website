@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# next
+/.next
+/out
+
+# env and secrets
+.env
+.env*.local
+
+# debug and local artifacts
+npm-debug.log*
+*.tsbuildinfo
+repos.json
+.tmp-shots
+
+# typescript
+next-env.d.ts
