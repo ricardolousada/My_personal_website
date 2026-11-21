@@ -100,16 +100,16 @@ export const chapters: Chapter[] = [
     id: "now",
     index: "01",
     era: "AI leadership",
-    range: "2025 —",
+    range: "2025 — 2026",
     summary: "Advisory work at the point where an AI ambition has to survive contact with operations.",
     roles: [
       {
         org: "DXC Technology",
         title: "Director of AI Consulting, Portugal",
-        when: "Feb 2025 — Present",
+        when: "Feb 2025 — Mar 2026",
         place: "Lisbon",
         summary:
-          "Working across strategic vision, technology, and execution so clients implement AI and capture business impact — operational excellence, innovation, and a defensible position in a market that is moving quickly.",
+          "Worked across strategic vision, technology, and execution so clients implement AI and capture business impact — operational excellence, innovation, and a defensible position in a market that is moving quickly.",
       },
     ],
   },

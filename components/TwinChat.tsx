@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 type Turn = { role: "user" | "assistant"; content: string };
 
 const starters = [
-  "What are you doing at DXC?",
+  "What did you do at DXC?",
   "Tell me about the Fujitsu alliances.",
   "Are you open to a new venture?",
 ];
