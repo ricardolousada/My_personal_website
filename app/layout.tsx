@@ -38,6 +38,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${outfit.variable} ${syne.variable}`}>
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="3209a066-ecd3-49c5-8fcd-3ac1f0afd629"
+        />
+      </head>
       <body suppressHydrationWarning>
         <HashScroll />
         <Header />
