@@ -8,14 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tiptap/react": "^3.35.0",
+    "@tiptap/starter-kit": "^3.35.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sanitize-html": "^2.18.2"
   },
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/sanitize-html": "^2.16.2",
     "typescript": "latest"
   }
 }

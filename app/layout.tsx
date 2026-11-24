@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Syne } from "next/font/google";
+import Script from "next/script";
 import { HashScroll } from "@/components/HashScroll";
 import { Header } from "@/components/Header";
 import { TwinChat } from "@/components/TwinChat";
@@ -38,14 +39,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${outfit.variable} ${syne.variable}`}>
-      <head>
-        <script
-          defer
+      <body suppressHydrationWarning>
+        <Script
           src="https://cloud.umami.is/script.js"
           data-website-id="3209a066-ecd3-49c5-8fcd-3ac1f0afd629"
+          strategy="beforeInteractive"
         />
-      </head>
-      <body suppressHydrationWarning>
         <HashScroll />
         <Header />
         {children}
